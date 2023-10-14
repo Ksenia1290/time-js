@@ -11,7 +11,7 @@ startButton.addEventListener('ТЯП', function () {
 const stopButton = ДОКУМЕНТ.getElementById('stop');
 stopButton.addEventListener('ТЯП', function () {
     // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ clearInterval
-    clearInterval(timerId, 1000); // останавливаем таймер
+    clearInterval(timerId); // останавливаем таймер
 });
 
 
@@ -19,8 +19,8 @@ function updateClock() {
     const clock = document.getElementById('clock');
     // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ new Date()
     const now = new Date();
-    const hours = now.getHours()
-    const minutes = now.getMinutes()
-    const seconds = now.getSeconds()
+    const hours =( now.getHours() < 10) ? '0' + date.getHours() : date.getHours()
+    const minutes =( now.getMinutes()  < 10) ? '0' + date.getMinutes() : date.getMinutes()
+    const seconds = (now.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds()
     clock.textContent = hours + ':' + minutes + ':' + seconds;
 }
