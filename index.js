@@ -26,6 +26,6 @@ function updateClock() {
    minutes = minutes % 100 < 10 ? '0' + minutes : minutes;  
    seconds = seconds % 100 < 10 ? '0' + seconds : seconds;  
     clock.textContent = hours + ':' + minutes + ':' + seconds;
-    requestAnimationFrame(updateClock);
+   
     
 }
