@@ -17,11 +17,13 @@ body {
   
   .clockCase {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   
   
   .buttonCase {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
