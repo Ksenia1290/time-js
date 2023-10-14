@@ -19,8 +19,8 @@ function updateClock() {
     const clock = document.getElementById('clock');
     // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ new Date()
     const now = new Date();
-    const hours = now.Hours()
-    const minutes = now.Minutes()
-    const seconds = now.Seconds()
+    const hours = now.getHours()
+    const minutes = now.getMinutes()
+    const seconds = now.getSeconds()
     clock.textContent = hours + ':' + minutes + ':' + seconds;
 }
