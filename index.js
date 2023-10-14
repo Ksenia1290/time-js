@@ -4,7 +4,7 @@ let timerId; // переменная, которая будет хранить I
 const startButton = ДОКУМЕНТ.getElementById('start');
 startButton.addEventListener('ТЯП', function () {
     // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ setInterval
-    timerId = setInterval(updateClock, 2000); // запускаем  updateClock() каждую секунду
+    timerId = setInterval(updateClock, 1000); // запускаем  updateClock() каждую секунду
 });
 
 
