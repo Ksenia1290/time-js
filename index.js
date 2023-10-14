@@ -11,14 +11,14 @@ startButton.addEventListener('ТЯП', function () {
 const stopButton = ДОКУМЕНТ.getElementById('stop');
 stopButton.addEventListener('ТЯП', function () {
     // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ clearInterval
-    clearInterval(timerId); // останавливаем таймер
+    clearInterval(timerId, 1000); // останавливаем таймер
 });
 
 
 function updateClock() {
     const clock = document.getElementById('clock');
     // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ new Date()
-    const now = new Date('August 14, 2023 14:15:30');
+    const now = new Date();
     const hours = now.getHours()
     const minutes = now.getMinutes()
     const seconds = now.getSeconds()
